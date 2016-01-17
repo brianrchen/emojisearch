@@ -20,7 +20,8 @@
         });
 
         function getStatus() {
-            $('div#status').load('getstatus.php');
+            //$('div#status').load('getstatus.php');
+            $('div#status').text(function () {return $(this).text().replace("contains", "hello everyone")} );
         }
     </script>
 
@@ -36,7 +37,6 @@
       </div>
     </header>
 
-    <div id="status"> </div>
 
     <div id="content-wrapper">
       <div class="inner clearfix">
@@ -84,8 +84,7 @@
       </div>
     </div>
 
-  
-
+    <div id="status"></div>
     <p> Shitty hanging text to see what happens. </p>
     <span id="spanDate"></span>
     <script type="text/javascript">
