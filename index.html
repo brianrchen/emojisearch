@@ -24,6 +24,10 @@
             $('div#status').load('test.txt');
             //$('div#status').text(function () {return $(this).text().replace("contains", "hello everyone")} );
         }
+
+        function buttonClicker() {
+            $('div#status').load('test2.txt');
+        }
     </script>
 
     <title>Emojisearch by brianrchen</title>
@@ -86,6 +90,7 @@
     </div>
 
     <div id="status">contains</div>
+    <button onclick="buttonClicker()"> I'm here, click me! </button>
     <p> Shitty hanging text to see what happens. </p>
     <span id="spanDate"></span>
     <script type="text/javascript">
